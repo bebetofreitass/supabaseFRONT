@@ -76,7 +76,7 @@ Este guia descreve o passo a passo para subir o projeto frontend [supabaseFRONT]
 
 ### No terminal:
 
-```bash
+## Terminal AWS
 cd /caminho/para/sua/key
 chmod 400 key01-front.pem
 ssh -i "key01-front.pem" ubuntu@<IP-PÚBLICO-DA-EC2>
