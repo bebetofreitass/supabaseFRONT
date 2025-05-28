@@ -1,0 +1,94 @@
+body {
+  background: linear-gradient(to right, #7b41da, #7d3164);
+  font-family: Arial, sans-serif;
+  color: white;
+  padding: 20px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+form {
+  background-color: #240046;
+  padding: 25px;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto 30px auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+form h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: white;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: white;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #15ff00;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #b300cc;
+}
+
+ul#products {
+  color: white;
+  list-style: none;
+  padding: 0;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+ul#products li {
+  background-color: #1a1a2e;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+
+ul#products li button {
+  padding: 8px 14px;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+}
+
+ul#products li button:first-of-type {
+  background-color: #5b5fef;
+}
+
+ul#products li button:last-of-type {
+  background-color: #ff4d4f;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Product CRUD</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Product CRUD</h1>
+
+  <!-- Formulário para adicionar produto -->
+  <form id="add-product-form">
+    <h2>Add Product</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="description">Description:</label>
+    <input type="text" id="description" name="description">
+
+    <label for="price">Price:</label>
+    <input type="number" id="price" name="price" required step="0.01">
+
+    <button type="submit">Add</button>
+  </form>
+
+  <!-- Formulário para atualizar produto -->
+  <form id="update-product-form" style="display: none;">
+    <h2>Update Product</h2>
+    <input type="hidden" id="update-id">
+
+    <label for="update-name">Name:</label>
+    <input type="text" id="update-name" required>
+
+    <label for="update-description">Description:</label>
+    <input type="text" id="update-description">
+
+    <label for="update-price">Price:</label>
+    <input type="number" id="update-price" required step="0.01">
+
+    <button type="submit">Update</button>
+  </form>
+
+  <!-- Lista de produtos -->
+  <ul id="products"></ul>
+
+  <script src="app.js"></script>
+  <script>
+    // Carrega os produtos ao abrir a página
+    window.addEventListener('load', fetchProducts);
+  </script>
+</body>
+</html>
