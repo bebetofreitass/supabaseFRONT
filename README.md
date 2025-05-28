@@ -22,7 +22,7 @@ Um projeto simples de CRUD (Create, Read, Update, Delete) de produtos, feito com
 
 ## 📂 Estrutura do projeto
 
-```bash
+
 /
 ├── index.html          # Estrutura da página
 ├── style.css           # Estilos da aplicação
@@ -83,36 +83,26 @@ ssh -i "key01-front.pem" ubuntu@<IP-PÚBLICO-DA-EC2>
 Exemplo: ssh -i "key01-front.pem" ubuntu@3.85.166.36
 
 3. Instalar Apache e Git
-bash
-Copiar
-Editar
 sudo apt update
 sudo apt install apache2 git -y
+
 4. Clonar e Configurar Projeto Frontend
-bash
-Copiar
-Editar
+
+´´´
 cd /var/www/html
 sudo rm index.html
 sudo git clone https://github.com/bebetofreitass/supabaseFRONT.git
 sudo cp -r supabaseFRONT/* .
 sudo rm -rf supabaseFRONT
 sudo chown -R www-data:www-data /var/www/html
+´´´
 5. Editar o app.js (se necessário)
 Substitua URLs ou endpoints da API:
-
-bash
-Copiar
-Editar
 sudo nano /var/www/html/app.js
 Salve com CTRL + O, pressione Enter e saia com CTRL + X.
 
 6. Acessar o Site
 Abra seu navegador e acesse:
-
-cpp
-Copiar
-Editar
 http://<IP-PÚBLICO-DA-EC2>
 Exemplo: http://3.85.166.36
 
